@@ -5,7 +5,6 @@
   "license": "MIT",
   "version": "0.0.1",
   "keywords": ["UFOstart", "flighplan", "marketing plan"],
-  "private": true,
   "repository": {
       "type": "git",
       "url": "https://github.com/thomaskral/ufostart-flightplan-api-client"
