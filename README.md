@@ -14,5 +14,5 @@ npm i ufostart-flightplan-api-client
 import { getFlightPlanByApiKey } from 'ufostart-flightplan-api-client'
 
 const yourUfostartApiKey = ''
-const flightplan = await getFlightPlanByApiKey(ufostartApiKey)
+const flightplan = await getFlightPlanByApiKey(yourUfostartApiKey)
 ```
