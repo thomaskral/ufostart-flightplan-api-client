@@ -14,7 +14,7 @@
   "main": "./commonjs/entry.js",
     "exports": {
       ".": {
-        "require":  "./commonjs/entry.js",
+        "require":  "./commonjs/index.js",
         "default": "./esm/entry.js"
       }
     },
