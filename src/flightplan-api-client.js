@@ -1,9 +1,9 @@
 import axios from "axios"
 const baseUrl = 'https://api.ufostart.com'
 const axiosConfig = {
-    responseType: "json",
+    responseType: 'json',
     headers: {
-        origin: "*",
+        origin: '*',
         'X-API-KEY': ''
     }
 }
