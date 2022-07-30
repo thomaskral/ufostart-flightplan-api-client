@@ -14,12 +14,13 @@
     "url": "https://github.com/thomaskral/ufostart-flightplan-api-client"
   },
   "homepage": "https://github.com/thomaskral/ufostart-flightplan-api-client",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./src/index.js",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "require": "./dist/index.cjs",
+      "import": "./src/index.js"
     }
   },
   "files": [
@@ -30,7 +31,7 @@
     "node": "^14.13.1 || >=16.0.0"
   },
   "scripts": {
-    "build": "tsup src/index.js --format cjs,esm --clean"
+    "build": "tsup src/index.js --format cjs --clean"
   },
   "devDependencies": {
     "tsup": "^6.2.1"
