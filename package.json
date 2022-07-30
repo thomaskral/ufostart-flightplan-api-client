@@ -1,6 +1,7 @@
 {
   "name": "flightplan-api-client",
   "type": "module",
+  "main": "flightplan-api-client.mjs",
   "private": true,
   "version": "0.0.1",
   "scripts": {},
