@@ -3,7 +3,7 @@
   "description": "API client for the UFOstart flightplan",
   "author": "Thomas Kral",
   "license": "MIT",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "keywords": ["UFOstart", "flighplan", "marketing plan"],
   "repository": {
       "type": "git",
