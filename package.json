@@ -3,7 +3,7 @@
   "description": "API client for the UFOstart flightplan",
   "author": "Thomas Kral",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "keywords": ["UFOstart", "flighplan", "marketing plan"],
   "repository": {
       "type": "git",
@@ -11,7 +11,8 @@
   },
   "homepage": "https://github.com/thomaskral/ufostart-flightplan-api-client",
   "type": "module",
-  "exports": "./src/flightplan-api-client.js",
+  "main": "./src/esm/flightplan-api-client.js",
+  "module": "./src/esm/flightplan-api-client.js",
   "files": ["src"],
   "engines": {
     "node": "^14.13.1 || >=16.0.0"
