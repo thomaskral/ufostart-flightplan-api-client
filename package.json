@@ -3,28 +3,38 @@
   "description": "API client for the UFOstart flightplan",
   "author": "Thomas Kral",
   "license": "MIT",
-  "version": "0.0.7",
-  "keywords": ["UFOstart", "flighplan", "marketing plan"],
+  "version": "0.0.8",
+  "keywords": [
+    "UFOstart",
+    "flighplan",
+    "marketing plan"
+  ],
   "repository": {
-      "type": "git",
-      "url": "https://github.com/thomaskral/ufostart-flightplan-api-client"
+    "type": "git",
+    "url": "https://github.com/thomaskral/ufostart-flightplan-api-client"
   },
   "homepage": "https://github.com/thomaskral/ufostart-flightplan-api-client",
-  "type": "module",
-  "main": "./src/commonjs/index.js",
-    "exports": {
-      ".": {
-        "require":  "./src/commonjs/index.js",
-        "default": "./src/esm/entry.js"
-      }
-    },
-  "module": "./src/esm/entry.js",
-  "files": ["src"],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "require": "./src/dist/index.js",
+      "import": "./src/dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
   "engines": {
     "node": "^14.13.1 || >=16.0.0"
   },
-  "scripts": {},
-  "devDependencies": {},
+  "scripts": {
+    "build": "tsup src/index.js --format cjs,esm --clean"
+  },
+  "devDependencies": {
+    "tsup": "^6.2.1"
+  },
   "dependencies": {
     "axios": "^0.27.2"
   }
