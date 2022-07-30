@@ -13,8 +13,8 @@ npm i ufostart-flightplan-api-client
 ```js
 import { getFlightPlanByApiKey } from 'ufostart-flightplan-api-client'
 
-const yourUfostartApiKey = ''
-let flightplan
+const yourUfostartApiKey = 'API_KEY'
+let flightplan = {}
 
 try {
     flightplan = await getFlightPlanByApiKey(yourUfostartApiKey)
@@ -26,10 +26,14 @@ or
 ```js
 const { getFlightPlanByApiKey } = require('ufostart-flightplan-api-client')
 
-const yourUfostartApiKey = ''
-const flightplan = getFlightPlanByApiKey(yourUfostartApiKey)
-                    .then(response => response)
-                    .catch(error => {
-                        console.log(error)
-                    })
+const yourUfostartApiKey = 'API_KEY'
+let flightplan = {}
+
+getFlightPlanByApiKey(yourUfostartApiKey)
+    .then(response => {
+        flightplan = response
+    })
+    .catch(error => {
+        console.log(error)
+    })
 ```
