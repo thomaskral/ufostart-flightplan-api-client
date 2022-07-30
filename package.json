@@ -11,7 +11,7 @@
   },
   "homepage": "https://github.com/thomaskral/ufostart-flightplan-api-client",
   "type": "module",
-  "main": "./commonjs/entry.js",
+  "main": "./commonjs/index.js",
     "exports": {
       ".": {
         "require":  "./commonjs/index.js",
