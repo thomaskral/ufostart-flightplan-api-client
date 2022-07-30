@@ -1,0 +1,11 @@
+{
+  "name": "flightplan-api-client",
+  "type": "module",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
